@@ -1,0 +1,5 @@
+fastapi>=0.115,<0.120
+uvicorn[standard]>=0.32,<0.40
+pydantic>=2.8,<3.0
+crawl4ai>=0.4.240,<1.0
+beautifulsoup4>=4.12,<5.0

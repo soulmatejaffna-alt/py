@@ -1,0 +1,17 @@
+{
+  "name": "@canonlayer/crawler-py",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Self-hosted Crawl4AI worker — Python sibling of @canonlayer/crawler",
+  "scripts": {
+    "dev": "cross-env PYTHONIOENCODING=utf-8 PYTHONPATH=src py -3.12 -m uvicorn canonlayer_crawler.main:app --host 0.0.0.0 --port 8788",
+    "start": "cross-env PYTHONIOENCODING=utf-8 PYTHONPATH=src py -3.12 -m uvicorn canonlayer_crawler.main:app --host 0.0.0.0 --port 8788",
+    "install:python": "py -3.12 -m pip install -r requirements.txt && py -3.12 -m playwright install chromium"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
